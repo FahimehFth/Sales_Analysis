@@ -14,7 +14,7 @@ Several sub-categories, notably **Tables** and **Bookcases**, show strong sales 
 
 ## Dashboard Overview
 
-![Dashboard Screenshot](Dashboard.png)
+![Dashboard Screenshot](Sales_Profit_Dashboard.png)
 
 The dashboard consists of four interconnected charts:
 
