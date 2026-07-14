@@ -1,34 +1,57 @@
-# Tableau Sales and Profit Analysis Dashboard
+# Sales and Profit Analysis Dashboard
 
-This Tableau dashboard provides a comprehensive analysis of sales and profit metrics, detailed across various dimensions. It is designed to offer insights into sales performance, profit trends, and the distribution of profits across different markets and product categories. The dashboard consists of four interconnected charts:
+An interactive Tableau dashboard analyzing sales and profit performance across product categories, markets, and time. Built to identify where sales volume is and isn't translating into profitability.
+
+🔗 **[View the live interactive dashboard on Tableau Public](https://public.tableau.com/app/profile/fahimeh.fotouhi/viz/SalesandProfitAnalysisDashboard_17840212491260/Sales_Profit_Dashboard)**
+
+## Business Question
+
+Which product sub-categories and markets are generating high sales but weak or negative margins, and where should pricing or discounting be revisited?
+
+## Key Finding
+
+Several sub-categories, notably **Tables** and **Bookcases**, show strong sales volume but negative or thin profit margins in specific markets (e.g. Tables in the US and Bookcases in LATAM), while lower-volume categories like Copiers deliver disproportionately high profit. This points to a discounting or pricing issue concentrated in furniture rather than a broad demand problem.
+
+## Dashboard Overview
 
 ![Dashboard Screenshot](Dashboard.png)
 
+The dashboard consists of four interconnected charts:
+
 ### 1. Sales by Category and Sub-Category (Bar Chart)
-- **Description**: This bar chart breaks down total sales by category and sub-category, offering a clear view of which product lines are driving the most revenue.
-- **Interactivity**: A filter action allows users to select specific categories or sub-categories and see the corresponding details across other charts on the dashboard.
+- **Description**: Breaks down total sales by category and sub-category, showing which product lines drive the most revenue.
+- **Interactivity**: A filter action lets users select specific categories or sub-categories, updating all other charts on the dashboard accordingly.
 
 ### 2. Monthly Profit (Line Chart)
-- **Description**: This line chart tracks monthly profit changes from 2011 to 2014, illustrating trends and fluctuations in profitability over time.
-- **Interactivity**: The chart updates based on selections made in the bar chart and highlight table, providing a focused view of profit trends for selected data points.
+- **Description**: Tracks monthly profit from 2011 to 2014, highlighting trends and fluctuations in profitability over time.
+- **Interactivity**: Updates dynamically based on selections made in the bar chart and highlight table.
 
 ### 3. Profit by Sub-Category and Market (Highlight Table)
-- **Description**: This highlight table presents profit data broken down by sub-category and market. The color coding allows for quick identification of high and low-profit areas.
-- **Interactivity**: Similar to the bar chart, a filter action is applied here to enable users to select specific sub-categories or markets, updating the other charts accordingly.
+- **Description**: Presents profit broken down by sub-category and market, with color coding to quickly spot high- and low-profit areas.
+- **Interactivity**: A filter action lets users select specific sub-categories or markets, updating the other charts accordingly.
 
 ### 4. Sales and Profit (Scatter Plot)
-- **Description**: This scatter plot visualizes the relationship between sales and profit, detailed by product name and sub-category. The size of each circle represents the quantity of orders, while the color represents aggregated profit, offering a multi-dimensional view of the data.
-- **Interactivity**: A highlight action is used here, allowing users to select data points from the bar chart or highlight table and see the corresponding points highlighted in the scatter plot without removing other data points.
+- **Description**: Visualizes the relationship between sales and profit by product name and sub-category. Circle size represents order quantity; color represents aggregated profit.
+- **Interactivity**: A highlight action lets users select points from the bar chart or highlight table and see the corresponding points highlighted here, without removing other data points from view.
 
-### Interactivity and User Experience
-- **Filter Actions**: Implemented for the bar chart and highlight table, these actions enable dynamic filtering across the dashboard, providing a cohesive and interactive experience.
-- **Highlight Actions**: Applied to the scatter plot, these actions allow users to highlight specific data points based on selections from the bar chart or highlight table, facilitating focused analysis while maintaining context.
+## Interactivity and User Experience
 
-### Usage
-This dashboard is ideal for analysts and decision-makers who need to:
-- Assess sales performance across different product categories and sub-categories.
-- Monitor profit trends over time.
-- Understand the distribution of profits across various markets.
-- Explore the relationship between sales, profit, and order quantities for detailed product analysis.
+- **Filter actions**: Implemented on the bar chart and highlight table for dynamic, cross-chart filtering.
+- **Highlight actions**: Applied to the scatter plot to focus on selected data points while retaining context.
 
-By leveraging the interactive features of Tableau, this dashboard offers an engaging and insightful way to analyze and visualize key sales and profit metrics.
+## Tools Used
+
+Tableau Desktop / Tableau Public, data cleaning via Tableau's Data Interpreter.
+
+## Usage
+
+This dashboard is intended for analysts and decision-makers who need to:
+- Assess sales performance across product categories and sub-categories
+- Monitor profit trends over time
+- Understand how profit is distributed across markets
+- Explore the relationship between sales, profit, and order quantity for individual products
+
+## Files
+
+- `Sales_Dashboard.twbx` — Packaged Tableau workbook (includes embedded data extract, no separate dataset file needed)
+- `Dashboard.png` — Static preview of the dashboard
